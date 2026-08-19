@@ -1,0 +1,236 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem); 
+    font-family: "Urbanist", sans-serif; 
+}
+body{
+    background-color: #E9EAF8;
+}
+
+/* ==== Header === */
+header{
+    text-align: center;
+    padding: 4vw;
+    font-size: 0.8rem;
+
+    ul{
+        padding: 2vw 2vw 3vw 2vw;
+    }
+    li{
+        padding: 0.6vw;
+    }
+    li a:hover{
+        color: #363c44;
+    }
+    a.button{
+        background-color: #747ED1;
+        color: #ffffff;
+        padding: 1.8vw 3.5vw;
+        border-radius: 5vw;
+    }
+    a.button:hover{
+        background-color: #838eec;
+    }
+    
+}
+
+/* ==== Banner === */
+section#banner{
+    background-color: #51225E;
+    text-align: center;
+    color: #ffffff;
+    margin: 2vw ;
+    padding: 12vw;
+    border-radius: 2vw;
+
+    h2{
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 2vw;
+    }
+    p{
+        font-size: 0.6rem;
+        padding: 0 6vw 4vw 6vw;
+    }
+}
+
+/* ==== Web === */
+section#web{
+    text-align: center;
+    padding: 4vw;
+    background-color: #ffffff;
+    margin: 7vw 2vw 7vw 2vw;  
+    border-radius: 2vw;
+
+    h2{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 2vw;
+    }
+    p{
+        font-size: 0.5rem;
+        padding: 0 8vw 2vw 8vw;
+        color: rgb(95, 95, 95);
+    }
+    a{
+        background-color: #E9EAF8;
+        color: #747ED1;
+        font-size: 0.5rem;
+        font-weight: 500;
+        padding: 1.8vw 3.5vw;
+        border-radius: 6vw;
+    }
+    a:hover{
+        background-color: #98a0df;
+        color: #ffffff;
+    }
+}
+
+section#process{
+    text-align: center;
+    padding: 4vw;
+    background-color: #ffffff;
+    margin: 7vw 2vw 7vw 2vw;  
+    border-radius: 2vw;
+
+    img{
+        width: 555px;
+        padding: 5vw 0;
+    }
+    h2{
+        font-weight: 600;
+        padding: 1vw 2vw;
+    }
+    u{
+        color: #747ED1;
+    }
+    ul img{
+        width: 80px;
+    }
+    li{
+        padding: 2vw;
+    }
+    h3{
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0 0 2vw;
+    }
+    p{
+        font-size: 0.7rem;
+        color: rgb(99, 99, 99);
+        padding: 0 4vw 0 4vw;
+    }
+}
+/* ==== Footer === */
+
+footer{
+    text-align: center;
+    padding: 4vw;
+    background-color: #21262C;
+    color: #ffffff;
+    margin: 2vw 2vw 2vw 2vw;  
+    border-radius: 2vw;
+
+    p{
+        font-size: 0.6rem;
+        color: #cfcccc;
+    }
+    img{
+        padding: 10px 5px 0;
+    }
+}
+
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+/* ==== Header === */
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+    h1{
+        padding: 0.5vw 0 ;
+    }
+    
+    ul{
+        display: flex;
+        padding: 0.5vw 1vw;
+    }
+    li{
+        padding: 0 0.5vw;
+        margin: 0vw 1vw;
+    }
+}
+section#banner{
+    p{
+        padding: 0 15vw 4vw 15vw;
+    }
+}
+
+/* ==== web === */
+section#web{
+    display: flex;
+    text-align: left;
+    padding: 8vw;
+    align-items: top;
+    gap: 50px;
+    img{
+        width: 2100px;
+    }
+    h2{
+        padding: 2vw 2vw;
+    }
+    p{
+        padding: 0vw 2vw 2vw 2vw;
+    }
+    a{
+        margin: 0 2vw 2vw 2vw;
+    }
+}
+
+section#process{
+    img{
+        width: 1350px;
+    }
+    h2{
+        padding: 1vw 10vw 1vw 10vw;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        width: 100;
+
+        img{
+            width: 70px;
+        }
+
+        h3{
+            font-size: 0.8rem;
+        }
+        p{
+            font-size: 0.4rem;
+        }
+    }
+}
+footer{
+    p{
+        font-size: 0.5rem;
+        padding: 0;
+    }
+}
+}
